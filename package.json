@@ -2,14 +2,21 @@
   "name": "reindex-landscape",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel lib -d dist --presets es2015,stage-2",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git@gitlab.linnovate.net:orit/reindex-landscape.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
 }
