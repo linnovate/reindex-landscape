@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/babel-cli/bin/babel.js lib -d dist --presets es2015,stage-2,react",
-    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
