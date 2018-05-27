@@ -20,10 +20,6 @@ var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
 var _reactRedux = require('react-redux');
 
-var _reactDesigner = require('react-designer');
-
-var _reactDesigner2 = _interopRequireDefault(_reactDesigner);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -68,9 +64,9 @@ var EditComponent = exports.EditComponent = function (_React$PureComponent) {
         _react2.default.createElement('input', { type: 'file', onChange: function onChange(e) {
             return _this2.handleChange(e.target.files);
           } }),
-        _react2.default.createElement(_reactDesigner2.default, { width: 250, height: 350,
+        _react2.default.createElement(Designer, { width: 250, height: 350,
           objectTypes: {
-            'text': _reactDesigner.Text,
+            'text': Text,
             'rect': Rect
           },
           onUpdate: function onUpdate(objects) {
