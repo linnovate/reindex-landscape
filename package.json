@@ -19,7 +19,5 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1"
   },
-  "dependencies": {
-    "react-designer": "^1.0.8"
-  }
+  "dependencies": {}
 }
